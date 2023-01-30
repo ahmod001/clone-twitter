@@ -1,0 +1,92 @@
+/* FONTS --------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Oxygen&family=Poppins&family=Roboto:wght@500&display=swap');
+
+/* All Colors ---------------------*/
+:root {
+    --main-bg-color: rgb(75, 97, 115);
+    --logIn-bg-color: black;
+    --place-holder-color: rgba(255, 255, 255, 0.77);
+    --text-color: white;
+    --btn-hover-color: rgba(58, 58, 58, 0.366);
+}
+
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+/* LOG IN Card */
+
+.log-in {
+    border-radius: 20px;
+    background: var(--logIn-bg-color);
+    width: 550px;
+    min-height: 650px;
+    z-index: calc(1);
+
+}
+        
+/* MEDIA QUERY FOR BORDER RADIUS */
+@media only screen and (max-width:572px) {
+    .log-in {
+        border-radius: 0px;
+
+    }
+}
+
+
+/* TITLE */
+.Sign-in-to-Twitter h1 {
+    font-size: 31px;
+    font-family: Roboto;
+
+}
+
+/* LOG IN WITH GOOGLE & APPLE BUTTONS HERE */
+.Sign-with-btn {
+    border: none;
+    padding: 9px 0px;
+    border-radius: 100px;
+    color: #3c4043;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Roboto;
+    word-spacing: 0.25px;
+
+}
+
+/* BUTTON HOVER */
+#Forgot-password:hover {
+    background-color: var(--btn-hover-color) !important;
+}
+
+/* Sign-In-INPUT fORM */
+
+.Sign-IN-Input::placeholder {
+    color: var(--place-holder-color);
+    font-weight: 400;
+
+}
+
+.Sign-IN-Input {
+    color: var(--text-color) !important;
+    font-weight: 600 !important;
+    font-size: 16px;
+}
+
+/* CREATE ACCOUNT LINK */
+
+footer a {
+    text-decoration: none;
+    font-family: Roboto;
+}
+
+/* HIDDEN  */
+#name {
+    display: none;
+}#name h1{
+    color: var(--text-color);
+
+    font-family: Roboto;
+    font-size: 80px;
+}
